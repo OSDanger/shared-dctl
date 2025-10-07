@@ -23,21 +23,27 @@ An open-source license (likely MIT or Apache 2.0) may be added in the future if 
 
 ## Included DCTLs
 
-### **OSDContrast**
+### **OSD Contrast**
 A lightweight tool focused on contrast manipulation.  
 Simple, direct, designed for clean adjustments without unnecessary complexity.
 
-### **OSDHalation**
+### **OSD Halation**
 A minimalistic halation formula I’ve been experimenting with.  
 It aims to add a subtle glow/red channel bloom effect inspired by film behavior.
 
-### **OSDTransform**
+### **OSD Transform**
 The centerpiece of this project.  
 It works similarly to the Color Space Transform OFX in Resolve, but expands on it with my custom color science: the **OSDwcs** (OSD Working Color Space), currently in development.  
 
-OSDwcs combines:
-- **OSD Log8P413** : a custom transfer function  
-- **OSD Wide Gamut** : a custom wide gamut color space (development version 0.08)  
+OSDwcs combines:  
+
+- **OSD Log8P413**  
+  A custom transfer function where **8 printer light points (offset)** equal **1 stop of light**.  
+  Middle gray (0.18 in linear) is mapped to **0.413**.  
+
+- **OSD Wide Gamut**  
+  A custom wide gamut color space (development version 0.08).  
+  Designed to encompass some of the main industry gamuts: **AWG3, AWG4, S-Gamut3.cine, ACES AP1, Rec.709, Rec.2020, and P3**.  
 
 A white paper with full specifications will eventually be released.
 
