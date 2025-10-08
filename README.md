@@ -47,6 +47,8 @@ OSDwcs combines:
 
 A white paper with full specifications will eventually be released.
 
+Currently, the available Display Render Transforms (DRT) support **Rec.709** and **P3-D65** displays, with gamma options of **2.2, 2.4, and 2.6**. Work is in progress on implementing the **SMPTE ST2084 PQ** curve for HDR.  
+
 Beyond color space management, OSDTransform also includes a **false color overlay**, mapped in stops of light:  
 - Purple: −6 stops  
 - Blue: −4 stops  
