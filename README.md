@@ -33,7 +33,7 @@ It aims to add a subtle glow/red channel bloom effect inspired by film behavior.
 
 ### **OSD Transform**
 The centerpiece of this project.  
-It works similarly to the Color Space Transform OFX in Resolve, but expands on it with my custom color science: the **OSDwcs** (OSD Working Color Space), currently in development.  
+It works similarly to the Color Space Transform OFX in Resolve, but expands on it with my custom color space: the **OSDwcs** (OSD Working Color Space), currently in development.  
 
 OSDwcs combines:  
 
