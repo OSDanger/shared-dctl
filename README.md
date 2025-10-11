@@ -24,12 +24,20 @@ An open-source license (likely MIT or Apache 2.0) may be added in the future if 
 ## Included DCTLs
 
 ### **OSD Contrast**
-A lightweight tool focused on contrast manipulation.  
-Simple, direct, designed for clean adjustments without unnecessary complexity.
+OSD Contrast uses a cubic spline curve to shape contrast around a pivot point.
+When **AutoSlope** is enabled, the tool automatically adjusts the curve’s transitions to keep highlight and shadow slopes balanced.
+A **Preserve Saturation** slider lets you control how much color saturation is affected by contrast adjustments.
 
 ### **OSD Halation**
-A minimalistic halation formula I’ve been experimenting with.  
-It aims to add a subtle glow/red channel bloom effect inspired by film behavior.
+A creative halation effect designed to add a subtle, warm glow around highlights.  
+It uses a soft Gaussian blur applied to the red and green channels to create a natural orange halo while keeping the blue channel clean.  
+
+The look can be adjusted with intensity, threshold, and rolloff controls, and a matte preview mode helps visualize the affected areas.  
+Two quality modes are available — **Performance** for speed, and **Precision** for smoother results.  
+
+While not meant as a film-accurate emulation, this DCTL provides a quick and flexible way to introduce a halation-style effect that responds naturally to light.  
+Because it currently relies on a generic **Rec.709-style luma mix**, results may vary slightly between different color gamuts.  
+A future version may include gamut-aware processing to ensure consistent behavior across spaces.
 
 ### **OSD Transform**
 The centerpiece of this project.  
@@ -55,4 +63,8 @@ Beyond color space management, OSDTransform also includes a **false color overla
 - Green: 0 stop (middle gray)  
 - Pink: +1 stop  
 - Yellow: 2 stops under Red  
-- Red: user-defined “highlight ceiling” range  
+- Red: user-defined “highlight ceiling” range
+
+**Note:**  When using OSD Transform as a DRT (output to a display space), it is strongly recommended to set **Clamp** to **Output**.  
+This prevents negative pixel values that can appear in extreme luminance or color conditions.
+A future **Auto Clamp** mode is planned to handle these cases automatically.
