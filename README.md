@@ -29,15 +29,17 @@ When **AutoSlope** is enabled, the tool automatically adjusts the curve’s tran
 A **Preserve Saturation** slider lets you control how much color saturation is affected by contrast adjustments.
 
 ### **OSD Halation**
-A creative halation effect designed to add a subtle, warm glow around highlights.  
+A creative, film-like halation effect designed to add a warm glow around highlights.  
 It uses a soft Gaussian blur applied to the red and green channels to create a natural orange halo while keeping the blue channel clean.  
 
-The look can be adjusted with intensity, threshold, and rolloff controls, and a matte preview mode helps visualize the affected areas.  
-Two quality modes are available — **Performance** for speed, and **Precision** for smoother results.  
+The look can be adjusted with **intensity**, **tint**, **threshold**, and **rolloff** controls, while a **matte preview** mode helps visualize the affected areas.  
 
-While not meant as a film-accurate emulation, this DCTL provides a quick and flexible way to introduce a halation-style effect that responds naturally to light.  
-Because it currently relies on a generic **Rec.709-style luma mix**, results may vary slightly between different color gamuts.  
-A future version may include gamut-aware processing to ensure consistent behavior across spaces.
+While not intended as a film-accurate emulation, this DCTL offers a quick and flexible way to introduce a halation-style effect that reacts naturally to light.  
+Because it currently relies on a generic **Rec.709-style luma mix**, results may vary slightly across different color gamuts.  
+A future version may include gamut-aware processing to ensure consistent behavior between color spaces.  
+
+Two quality modes are available: **Performance** for speed, and **Precision** for smoother results.  
+The effect itself can become GPU-intensive at higher intensity values, even in Performance mode.
 
 ### **OSD Transform**
 The centerpiece of this project.  
