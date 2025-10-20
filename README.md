@@ -59,14 +59,18 @@ A white paper with full specifications will eventually be released.
 
 Currently, the available Display Render Transforms (DRT) support **Rec.709** and **P3-D65** displays, with gamma options of **2.2, 2.4, and 2.6**. Work is in progress on implementing the **SMPTE ST2084 PQ** curve for HDR.  
 
-Beyond color space management, OSDTransform also includes a **false color overlay**, mapped in stops of light:  
-- Purple: −6 stops  
+**Note:**  When using OSD Transform with a DRT as output (output to a display space), it is strongly recommended to set **Clamp** to **Output**.  
+This prevents negative pixel values that can appear in extreme luminance or color conditions.
+A future **Auto Clamp** mode is planned to handle these cases automatically.
+
+Beyond color space management, OSD Transform also includes a scene refered **false color overlay**, mapped in stops of light:  
+- Purple: −6 stops
 - Blue: −4 stops  
 - Green: 0 stop (middle gray)  
 - Pink: +1 stop  
 - Yellow: 2 stops under Red  
 - Red: user-defined “highlight ceiling” range
 
-**Note:**  When using OSD Transform as a DRT (output to a display space), it is strongly recommended to set **Clamp** to **Output**.  
-This prevents negative pixel values that can appear in extreme luminance or color conditions.
-A future **Auto Clamp** mode is planned to handle these cases automatically.
+### **Coming Soon – OSD Balance**  
+A lightweight DCTL for quick image balancing.  
+It includes an **Exposure** control, a **Contrast** slider (with optional saturation preservation), and straightforward **Temperature** and **Tint** adjustments based on linear gain operations.
