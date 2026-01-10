@@ -74,3 +74,10 @@ Beyond color space management, OSD Transform also includes a scene refered **fal
 ### **Coming Soon – OSD Balance**  
 A lightweight DCTL for quick image balancing.  
 It includes an **Exposure** control, a **Contrast** slider (with optional saturation preservation), and straightforward **Temperature** and **Tint** adjustments based on linear gain operations.
+
+### **Coming Soon - OSD Film Grain**
+A physically-inspired grain engine that operates in a Log-Additive density domain for creative film textures.
+
+The tool features Stop-Based response curves to precisely target grain strength in shadows and highlights, and simulates independent RGB layers with clumping and temporal fluctuation to create a living, breathing organic look.
+
+It also includes Subtractive Saturation to prevent grain buildup in highly saturated colors, ensuring a more blended and natural result. Designed as a color-managed tool, it handles the necessary transforms internally to work consistently across any timeline.
