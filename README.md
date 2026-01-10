@@ -9,9 +9,9 @@ If that happens, the repo will be updated with source code, documentation, and a
 
 
 ## Disclaimer
-These tools are provided as-is, without warranty or guarantee of fitness for any particular purpose.  
-Use at your own risk.
-
+These tools are provided as-is, without warranty or guarantee of fitness for any particular purpose.
+They were built for my personal grading workflow and are used daily in professional work, but they are not shipped as “production-certified” software.
+Portions of the implementation are AI-assisted.
 
 
 ## License
