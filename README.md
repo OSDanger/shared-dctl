@@ -1,5 +1,10 @@
 # shared-dctl
 
+## THIS REPO IS DEPRECATED
+For more up to date DCTL, please go to :
+https://codeberg.org/OSDanger/shared-dctl
+
+
 A collection of my personal DCTLs that I’m making available to the community.  
 Right now, these DCTLs are shared in **encrypted form**, meaning you can use them but not access the source code.  
 
