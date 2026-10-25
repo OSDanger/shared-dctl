@@ -1,9 +1,9 @@
 # shared-dctl
 
-## THIS REPO IS DEPRECATED
-For more up to date DCTL, please go to :
-https://codeberg.org/OSDanger/shared-dctl
-
+> [!IMPORTANT]
+> ⚠️ This repository is no longer maintained and is out of date.
+> The project has moved to Codeberg:
+> **[View the up-to-date repository](https://codeberg.org/OSDanger/shared-dctl)**
 
 ___
 
